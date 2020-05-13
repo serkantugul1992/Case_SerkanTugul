@@ -1,0 +1,30 @@
+USE [Deneme]
+GO
+
+/****** Object:  Table [dbo].[Menus]    Script Date: 12-May-2020 1:04:00 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Menus](
+	[Id] [int] NULL,
+	[MenuName] [nvarchar](100) NULL,
+	[Explanation] [nvarchar](max) NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+--Eklenen kayýtlar
+INSERT INTO Menus
+("Id","MenuName","Explanation")
+VALUES ('1',N'Home',N'Home Page')
+INSERT INTO Menus
+("Id","MenuName","Explanation")
+VALUES ('2',N'Report',N'Report Page')
+INSERT INTO Menus
+("Id","MenuName","Explanation")
+VALUES ('3',N'About',N'About Page')
+INSERT INTO Menus
+("Id","MenuName","Explanation")
+VALUES ('4',N'Contact',N'Contact Page')
